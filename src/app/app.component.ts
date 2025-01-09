@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {NavComponent} from './component/nav.component';
 
 @Component({
   selector: 'app-root',
+  imports: [NavComponent],
   template: `
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <app-nav></app-nav>
   `,
 })
 export class AppComponent {
